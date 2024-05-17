@@ -19,7 +19,13 @@ _G.KeyInPut = "String"
 
 function MakeScriptHub()
 local Window = OrionLib:MakeWindow({Name="Testing", HidePremium=false, SaveConfig = true, ConfigFolder="OrionTest", IntroEnabled=true, IntroText="TESTING"})
+
+local Tab = Window:MakeTab({
+    Name = "Testing",
+    PremiumOnly = false
+})
 end
+
 
 function CorrectKeyNotification()
     OrionLib:MakeNotification({
