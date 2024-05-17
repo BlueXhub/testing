@@ -5,7 +5,12 @@ _G.Key = "Roblox"
 _G.KeyInput = "string" 
 
 function MakeScriptHub()
-    
+   local window = OrionLib:MakeWindow({Name = "Testing", HidePremium = false, SaveConfig = true, ConfigFolder="OrionTest"})
+
+   local Tab = Window:MakeTab({
+    Name = "Test",
+    PremiumOnly = false
+   })
 end
 
 
